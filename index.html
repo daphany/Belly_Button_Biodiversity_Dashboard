@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Overview of the Study</h2>
+        <p>Our lab has partnered with Improbable Beef, a company who manufacture synthetic beef, to do a study to identify bacterial species that have the ability to synthesize proteins that taste like beef from human body. 
+          These bacterial species have been found on algae, fungi and varies plants. There are thousands type of bacteria found on human body and our hypothesis is that the microorganism that can supply the next best taste can be found on human body. 
+          Below interactive charts allow the volunteers to identify the top 10 bacterial species in their belly buttons. That way, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, the volunteers will be able to identify whether that species is found in their navel.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="contact">
+        <a href="https://github.com/daphany">
+          <i class="fab fa-2x fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/daphany-wang-b66087a4/">
+          <i class="fab fa-2x fa-linkedin"></i>
+        </a> 
+        <a href="mailto:daphanyyan@hotmail.com">
+          <i class="fas fa-2x fa-envelope"></i> 
+        </a> 
+        <p class="text text-center">
+          <small>&copy; University of Toronto Data Analytics Boot Camp | Designed by Daphany Wang</small>
+        </p> 
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/script2.js"></script>
+  <script src="static/charts.js"></script>
+
+</body>
+</html>
