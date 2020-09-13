@@ -10,16 +10,20 @@ body{
     color: white;
 };
 
-.custom-panel{
+.custom-panel {
 	margin-top: 60px;
 }
 
-.footer{
+.footer {
     background: #072203;
     color: white;
     height:70px;
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    
+};
 
-;}
+.footer.contact {
+    display: flex;
+};
 
