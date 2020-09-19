@@ -5,5 +5,5 @@ An interactive dashboard is built to explore the Belly Button Biodiversity datas
 Visit Belly Button Biodiversity Project.
 https://daphany.github.io/Belly_Button_Biodiversity_Dashboard/.
 
-<img src="screenshot.png" width="800">
+<img src="screenshot.png">
 
